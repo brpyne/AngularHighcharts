@@ -1,8 +1,9 @@
 Angular Highcharts
 =================
 
-Charts API: http://api.highcharts.com/highcharts
-Based off of project by: https://github.com/pablojim/highcharts-ng
+Charts API: http://api.highcharts.com/highcharts/
+
+Based off of project by: https://github.com/pablojim/highcharts-ng/
 
 
 Example
