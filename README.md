@@ -1,12 +1,12 @@
 Angular Highcharts
 =================
 
-AngularJS directive for Highcharts based off of https://github.com/pablojim/highcharts-ng
+Charts API: http://api.highcharts.com/highcharts
+Based off of project by: https://github.com/pablojim/highcharts-ng
 
-NuGet package for quick setup.
 
-A simple Angularjs directive for Highcharts.
-
+Example
+---------
 
 `<highchart id="chart" config="chartConfig"></highchart>`
 
@@ -17,6 +17,24 @@ The chart config resembles an exploded highcharts options object:
 
 
 ```javascript
+
+//Switch to use High Stocks
+this.chartConfig.useHighStocks = !this.chartConfig.useHighStocks;
+
+//Display Loading Message
+this.chartConfig.loading = !this.chartConfig.loading;
+
+//Set Chart Type (line, spline, area, areaspline, column, bar, pie and scatter)
+this.chartConfig.options.chart.type = 'line';
+
+//Add Series
+this.chartConfig.series.push({ data: series });
+
+//Remove Series
+var seriesArray = $scope.chartConfig.series;
+seriesArray.splice(0, 1);
+
+//Set Chart Configuration
 chartConfig = {
              //Main Highcharts options. Any Highchart options are valid here.
              //will be ovverriden by values specified below.
@@ -45,7 +63,10 @@ chartConfig = {
              //Whether to use HighStocks instead of HighCharts. Defaults to false.
              useHighStocks: false
              }
+
 ```
+
+
 
 All properties on the chart configuration are optional. Each property is watched for changes by angularjs.
 
