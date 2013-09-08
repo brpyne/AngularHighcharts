@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>angular-highcharts</id>
+        <version>1.0.1</version>
+        <title>Angular Highcharts</title>
+        <authors>Brad Pyne</authors>
+        <owners>Brad Pyne</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>This is an easy to deploy directive to allow creation of Highchart components through AngularJS.</description>
+        <summary>This is an easy to deploy directive to allow creation of Highchart components through AngularJS.</summary>
+        <copyright>2013</copyright>
+        <language>en-US</language>
+        <tags>Angular JS Highcharts Charts</tags>
+        <dependencies>
+            <dependency id="angularjs" version="1.0.7" />
+        </dependencies>
+    </metadata>
+</package>
